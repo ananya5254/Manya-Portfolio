@@ -327,7 +327,6 @@ body {
     margin-top: 45px;
 }
 
-
 /* ABOUT — SEQUENTIAL TYPEWRITER */
 
 .about-greeting {
@@ -374,12 +373,6 @@ body {
         visibility: visible;
     }
 }
-
-
-
-
-
-
 
 .info-card {
     padding: 25px;
@@ -847,10 +840,7 @@ body {
     }
 }
 
-
-
 /* SKILLS & TOOLS */
-
 
 .about-details {
     display: grid;
@@ -901,7 +891,6 @@ body {
     }
 }
 
-
 .detail-group h3 {
     margin: 0 0 14px;
     font-family: 'DM Sans', sans-serif;
@@ -947,8 +936,6 @@ body {
     }
 }
 
-
-
 /* ALIGN EDUCATION, SKILLS AND TOOLS BOXES */
 
 .info-grid,
@@ -964,7 +951,6 @@ body {
     border: 1px solid var(--line);
     box-sizing: border-box;
 }
-
 
 /* ABOUT BOXES — EQUAL SIZE */
 
