@@ -462,7 +462,7 @@ body {
 /* PROJECT DETAIL PAGE */
 
 .project-detail {
-    width: min(100% - 10%, 820px);
+    width: min(90%, 820px);
     margin: 0 auto;
     padding: 64px 0 100px;
 }
@@ -558,6 +558,10 @@ body {
     text-decoration: none;
 }
 
+.contact-details a {
+    overflow-wrap: anywhere;
+}
+
 .contact-details a:hover,
 .social-links a:hover {
     color: var(--olive);
@@ -631,7 +635,23 @@ body {
 
 /* RESPONSIVE LAYOUT */
 
+@media (max-width: 950px) {
+    .project-grid,
+    .about-boxes {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
 @media (max-width: 800px) {
+    .site-header {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .main-nav {
+        gap: clamp(16px, 3vw, 26px);
+    }
+
     .home-section {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -655,9 +675,6 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .project-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
 }
 
 @media (max-width: 600px) {
@@ -677,7 +694,7 @@ body {
     }
 
     .main-nav {
-        gap: 20px;
+        gap: clamp(14px, 5vw, 20px);
         flex-wrap: wrap;
     }
 
@@ -687,7 +704,8 @@ body {
     }
 
     .home-text h1 {
-        font-size: clamp(46px, 12vw, 64px);
+        font-size: clamp(36px, 10.5vw, 54px);
+        letter-spacing: -1.5px;
     }
 
     .home-image {
@@ -706,6 +724,20 @@ body {
     .project-grid {
         grid-template-columns: 1fr;
         gap: 36px;
+    }
+
+    .about-boxes {
+        grid-template-columns: 1fr;
+    }
+
+    .about-boxes .info-card,
+    .about-boxes .detail-group {
+        padding: 20px;
+    }
+
+    .about-boxes .tool-item {
+        gap: 8px;
+        padding: 7px 10px;
     }
 
     .project-image {
@@ -1028,5 +1060,43 @@ body {
 @media (max-width: 700px) {
     .about-boxes {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 420px) {
+    .site-header {
+        gap: 14px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .logo {
+        font-size: 14px;
+    }
+
+    .main-nav a {
+        font-size: 12px;
+    }
+
+    .home-section,
+    .content-section {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .home-feature-image {
+        height: 340px;
+    }
+
+    .project-image {
+        height: 220px;
+    }
+
+    .project-detail h1 {
+        font-size: clamp(36px, 11vw, 48px);
+    }
+
+    .footer-main {
+        gap: 10px;
     }
 }
